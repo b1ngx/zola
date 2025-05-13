@@ -115,7 +115,7 @@ export async function signInWithGoogle(supabase: SupabaseClient) {
           : APP_DOMAIN
 
     const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
+      provider: "github",
       options: {
         redirectTo: `${baseUrl}/auth/callback`,
         queryParams: {

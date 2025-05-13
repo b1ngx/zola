@@ -18,7 +18,7 @@ import {
 import { openproviders, OpenProvidersOptions } from "./openproviders"
 import { SupportedModel } from "./openproviders/types"
 
-export const NON_AUTH_DAILY_MESSAGE_LIMIT = 5
+export const NON_AUTH_DAILY_MESSAGE_LIMIT = 0
 export const AUTH_DAILY_MESSAGE_LIMIT = 1000
 export const REMAINING_QUERY_ALERT_THRESHOLD = 2
 export const DAILY_FILE_UPLOAD_LIMIT = 5

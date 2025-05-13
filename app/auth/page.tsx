@@ -25,7 +25,7 @@ export default function LoginPage() {
         window.location.href = data.url
       }
     } catch (err: any) {
-      console.error("Error signing in with Google:", err)
+      console.error("Error signing in with GitHub:", err)
       setError(err.message || "An unexpected error occurred. Please try again.")
     } finally {
       setIsLoading(false)
@@ -60,14 +60,14 @@ export default function LoginPage() {
               disabled={isLoading}
             >
               <img
-                src="https://www.google.com/favicon.ico"
-                alt="Google logo"
+                src="https://github.githubassets.com/favicons/favicon.png"
+                alt="GitHub logo"
                 width={20}
                 height={20}
                 className="mr-2 size-4"
               />
               <span>
-                {isLoading ? "Connecting..." : "Continue with Google"}
+                {isLoading ? "Connecting..." : "Continue with GitHub"}
               </span>
             </Button>
           </div>
