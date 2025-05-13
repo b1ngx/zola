@@ -25,7 +25,7 @@ export function PopoverContentAuth() {
         window.location.href = data.url
       }
     } catch (err: any) {
-      console.error("Error signing in with Google:", err)
+      console.error("Error signing in with GitHub:", err)
       setError(err.message || "An unexpected error occurred. Please try again.")
     } finally {
       setIsLoading(false)
@@ -62,13 +62,13 @@ export function PopoverContentAuth() {
           disabled={isLoading}
         >
           <img
-            src="https://www.google.com/favicon.ico"
-            alt="Google logo"
+            src="https://www.github.com/favicon.ico"
+            alt="GitHub logo"
             width={20}
             height={20}
             className="mr-2 size-4"
           />
-          <span>{isLoading ? "Connecting..." : "Continue with Google"}</span>
+          <span>{isLoading ? "Connecting..." : "Continue with GitHub"}</span>
         </Button>
       </div>
     </PopoverContent>
