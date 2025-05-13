@@ -38,7 +38,7 @@ export function UserPreferencesProvider({
 
   useEffect(() => {
     if (!isAuthenticated) {
-      setPreferences((prev) => ({ ...prev, layout: "fullscreen" }))
+      // setPreferences((prev) => ({ ...prev, layout: "fullscreen" }))
       setIsInitialized(true)
       return
     }
